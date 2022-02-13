@@ -2,13 +2,29 @@ package card;
 
 public class Permutation {
     int [] permutation;
+    int index, cap, a, x;
 
-    public Permutation(int seed, int cap) {
+    public Permutation(int index, int cap) {
         permutation = new int[cap];
+        this.index = index;
+        this.cap = cap;
+        this.a = (int) index / cap;
+        this.x = index % cap;
+
+        calculatePermutation();
+
+    }
+
+    public void calculatePermutation() {
         for (int i = 0; i < cap; i++) {
-            int value = ((seed + i) + ( i * (int)(seed/cap) )) % cap; //TODO: Repair formula
-            permutation[value] = i+1;
+            permutation[i] = value(i);
         }
+    }
+
+    public int value (int position) {
+        //index, position, a, x, cap
+        int shift = 0; //TODO: Calculate shift
+        return (position +  shift) % cap + 1;
     }
 
     public void print() {
