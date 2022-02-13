@@ -1,4 +1,5 @@
 package card;
+//TODO: Remove if unused
 public class Card {
 
     public static int cap;

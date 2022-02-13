@@ -1,5 +1,7 @@
 package card;
 
+import static util.Utilities.factorial;
+
 public class Permutations {
     int cap;
     int range;
@@ -24,20 +26,6 @@ public class Permutations {
             var permutation = new Permutation(i, cap);
             permutations[i] = permutation;
         }
-    }
-
-    public int factorial(int n) throws Exception {
-        //Todo: Enum for factorial results
-        if (n < 1) {
-            throw new Exception("(n < 1) not allowed"); //TODO: Write own exception
-        } else if (n > 17) {
-            throw new Exception("(n > 17) not allowed for resource protection");
-        }
-        int result = 1;
-        for (; n > 0 ; n--) {
-            result *= n;
-        }
-        return result;
     }
 
     public void printPermutation() {
