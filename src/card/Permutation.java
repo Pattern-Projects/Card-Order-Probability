@@ -1,8 +1,6 @@
 package card;
 
-import card.Permutations;
-
-import static util.Utilities.factorial;
+import static util.Math.factorial;
 
 public class Permutation {
     int [] permutation;

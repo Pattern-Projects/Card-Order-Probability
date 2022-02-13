@@ -1,6 +1,6 @@
 package card;
 
-import static util.Utilities.factorial;
+import static util.Math.factorial;
 
 public class Permutations {
     int cap;
