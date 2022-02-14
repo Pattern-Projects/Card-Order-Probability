@@ -1,5 +1,6 @@
 package card;
 
+import static card.Permutations.record;
 import static util.Math.factorial;
 
 public class Permutation {
@@ -10,7 +11,7 @@ public class Permutation {
         permutation = new int[cap];
         this.index = index;
         this.cap = cap;
-        this.a = (int) index / cap;
+        this.a = (int) (index / cap);
         this.x = index % cap;
 
         calculatePermutation();
@@ -32,18 +33,21 @@ public class Permutation {
             e.printStackTrace();
         }
 
-        int shift = a + b + x + (cap - position); //TODO: Calculate shift
+//        int shift = a + b + x + (cap - position); //TODO: Calculate shift
+
+        int shift = 0;
+        try {
+            shift = ((index + 1)/factorial(cap-position));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         int result = (shift) % cap;
 
-        System.out.println("index: " + index);
-        System.out.println("a: " + a);
-        System.out.println("x: " + x);
-        System.out.println("position: " + position);
-        System.out.println("cap: " + cap);
-        System.out.println("b: " + b);
-        System.out.println("shift: " + shift);
-        System.out.println("result: " + result);
-        System.out.println();
+        record.append("position: " + position);
+        record.append("b (factorial(cap-i)): " + b);
+        record.append("shift: " + shift);
+        record.append("result: " + result);
+        record.append("\n");
 
         return result;
     }
