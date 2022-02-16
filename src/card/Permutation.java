@@ -33,11 +33,9 @@ public class Permutation {
             e.printStackTrace();
         }
 
-//        int shift = a + b + x + (cap - position); //TODO: Calculate shift
-
         int shift = 0;
         try {
-            shift = ((index + 1)/factorial(cap-position));
+            shift = ((index + 1)/factorial(cap-position))-position; //TODO: Solve solution
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -53,12 +51,13 @@ public class Permutation {
     }
 
     public void print() {
+        StringBuilder string = new StringBuilder();
         for (int i = 0; i < permutation.length; i++) {
-            System.out.print(permutation[i]);
+            string.append(permutation[i]);
             if (i < permutation.length-1)
-                System.out.print(",");
+                string.append(",");
         }
-        System.out.println();
+        record.append(string.toString());
     }
 
 
