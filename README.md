@@ -7,7 +7,7 @@ How many permutations exist where
 sequential digits (i.e 1 & 2) are not neighbours.  
 (n is not considered sequential to n, for now)
 
-Example:   
+## Example:   
 Given n = 4  
 Digit range is 1, 2, 3, 4  
 Permutations = 1 * 2 * 3 * 4 = 24  
