@@ -69,13 +69,13 @@ After which point it follows the column pattern (1,1,2,3,2,3)
 | x=5 | 1423 | 2431   |
 
 The formula exists in this pattern, but I have yet to find it.
-Rotating the position pattern 180 gives us 0,1,0,1,2,2
+Rotating the position pattern 180 gives us:
 
-|  | a>0  |   
-|-----|------|
-| x=5 | 1000 |
-| x=4 | 0100 |
-| x=3 | 1000 |
-| x=2 | 0100 |
-| x=1 | 0010 |
-| x=0 | 0010 |
+|  | a > 0 | pos | 
+|-----|-------|-----|
+| x=5 | 1000  | 0   |
+| x=4 | 0100  | 1   |
+| x=3 | 1000  | 0   |
+| x=2 | 0100  | 1   |
+| x=1 | 0010  | 2   |
+| x=0 | 0010  | 2   |
