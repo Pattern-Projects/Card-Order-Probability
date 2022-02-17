@@ -20,7 +20,7 @@ Permutations = 1 * 2 * 3 * 4 = 24
 | 1423 | *2413* | 3412   | 4312 |
 | 1423 | 2431   | 3421   | 4321 |
 
-Two permutations exist where no neghbours coincide:
+Two permutations exist where no neighbours coincide:
 - 2413
 - 3142
 
@@ -79,3 +79,7 @@ Rotating the position pattern 180 gives us:
 | x=2 | 0100  | 1   |
 | x=1 | 0010  | 2   |
 | x=0 | 0010  | 2   |
+
+
+## Next Steps
+- Study differential calculus
